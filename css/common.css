@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+* {padding: 0; margin: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none; color: inherit;}
+body {color: #1b1a1b; font-family: 'Noto Sans KR', sans-serif; margin: 0 auto;}
+.clearfix::after {content: ""; display: block; clear: both;}
+
+/* all */
+section {
+    width: 100%; height: 100vh;
+}
+
+/* footer */
+footer {
+    width: 100%; height: 312px; background: #1b1a1b;
+    scroll-snap-align:center;
+    scroll-snap-stop:always;
+}
+footer .f_logo {
+    float: left;
+    width: 20%; 
+}
+footer .f_logo a {
+    float: right;
+    margin-top: 127px;
+}
+footer .f_text {
+    float: left;
+    width: 50%; 
+    padding: 110px 0 0 20px;
+    box-sizing: border-box;
+    font-weight: 100; font-size: 15px;
+}
+footer .f_text li {
+    float: left;
+    padding-left: 20px;
+    color: #fff;
+    line-height: 23px;
+    letter-spacing: -0.5px;
+}
+footer .f_text li:nth-child(3) {
+    clear: both;
+}footer .f_text li:nth-child(5) {
+    clear: both;
+}
+footer .f_text li:last-child {
+    clear: both;
+}
+footer .f_text li span {
+    padding: 5px;
+    
+}
+footer .f_sns {
+    float: left;
+    width: 30%; height: 312px; line-height: 312px;
+}
+footer .f_sns li {
+    float: left; padding-right: 15px;
+    width: 66px; height: 66px;
+    
+}
+
+footer .f_sns li button {
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    width: 66px; height: 66px;
+    border-radius: 15px;
+    vertical-align: middle;
+}

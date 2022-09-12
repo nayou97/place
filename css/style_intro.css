@@ -1,0 +1,44 @@
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+.container .top {
+    padding-top: 220px;
+    padding-bottom: 120px;
+}
+.container .top h2 {
+    font-size: 54px;
+    letter-spacing: 10px;
+}
+.container .top img {
+    padding-top: 82px;
+}
+.container .bottom {}
+.container .bottom .bottom_txt {
+    width: 100%; height: 190px;
+
+}
+.container .bottom .bottom_txt h3 {
+    font-size: 32px ; font-weight: 300;
+    float: left; line-height: 45px;
+    
+}
+.container .bottom .bottom_txt p {
+    float: left;
+    font-size: 20px; line-height: 23px;
+    font-weight: 300; color: #3d3c3c;
+    padding-left: 180px;
+}
+.container .bottom .bottom_img {
+    width: 100%;
+    padding-top: 80px;
+}
+.container .bottom .bottom_img img {}
+.container .bottom .bottom_img img:first-child {
+    float: left;
+}
+.container .bottom .bottom_img img:last-child {
+    float: right;
+}
+
+footer {margin-top: 400px;}

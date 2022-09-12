@@ -1,0 +1,214 @@
+/* header */
+header {
+    width: 100%; height: 98px;
+    background-color: #fff;
+    position: fixed; z-index: 100;
+    /* overflow: hidden; */
+}
+header nav ul.nav_left {
+    float: left; position: relative;
+}
+header nav ul.nav_left li.ham{
+    padding: 36px 0 0 74px;
+    float: left; cursor: pointer;
+    display: none;
+}
+header nav ul.nav_left li.close {
+    padding: 36px 0 0 74px;
+    float: left; 
+    display: none; cursor: pointer;
+}
+header nav ul.nav_left li.on {display: block;}
+header nav ul.nav_left li:last-child {
+    float: left;
+    padding: 28px 0 0 23px;
+}
+header nav ul.nav_right {
+    float: right;
+}
+header nav ul.nav_right li:first-child {
+    float: left;
+    font-size: 15px;
+    padding-top: 45px;  
+}
+header nav ul.nav_right li:last-child {
+    float: left;
+    font-size: 15px;
+    border: 1px solid #1b1a1b;
+    margin: 31px 78px 0 38px;
+}
+
+header nav ul.nav_right li:last-child a {
+    padding: 14px 27px;
+    display: block; position: relative;
+}
+header nav ul.nav_right li:last-child a::before{
+    content: "";
+    position: absolute; top: 0; left: 0; display: block;
+    width: 100%;height: 100%; z-index: -1;
+    background-color: #000;
+    -webkit-transform: scaleY(.3);
+    transform: scaleY(.3);
+    opacity: 0; transition: all .3s
+}
+header nav ul.nav_right li:last-child a:hover {
+    color: #fff;
+}
+header nav ul.nav_right li:last-child a:hover::before {
+    opacity: 1; background-color: #1b1a1b;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
+    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
+}
+
+
+/* right_resrv */
+.right_resrv {
+    position: absolute;
+    right: 7%;
+    bottom: 10%;
+    position: fixed;
+}
+.right_resrv:hover a{
+    display: block;
+}
+.right_resrv a img {
+    width: 80px;
+}
+.right_resrv a img:hover {
+    animation: r_btn 1.6s linear infinite ;
+    transition:  0.5s;
+}
+@keyframes r_btn {
+    0%{opacity: 0.8;}
+    50%{opacity: 1;}
+    100%{opacity: 0.8;}
+}
+
+
+
+
+
+header .nav_list {
+    width: 100%; height: calc(100vh - 70px);
+    background-color: #1b1a1b;
+    margin-top: 40px;
+    overflow: hidden;
+    display: none;
+}
+header .nav_list ul.gnb {
+    color: #fff;
+    width: 100%;
+    margin: 0 auto; 
+    padding-left: 70px;
+}
+header .nav_list ul.gnb>li {
+    float: left; 
+    padding-top: 106px;
+    width: 20%;
+}
+header .nav_list ul.gnb>li::before {
+    width: 70px; height: 1px;
+    background-color: #fff;
+    content: ""; display: block;
+    margin-left: 30px;
+    margin-bottom: -17px;
+}
+header .nav_list ul.gnb>li:nth-child(1)::before {
+    margin-left: 0px;
+}
+header .nav_list ul.gnb>li:nth-child(3)::before {
+    margin-left: 16px;
+}
+header .nav_list ul.gnb>li:last-child{
+    padding-right: 0;
+}
+header .nav_list ul.gnb>li>a {
+    font-size: 30px; 
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+header .nav_list ul.gnb>li:hover>a {
+    font-weight: bold;
+}
+header .nav_list ul.gnb>li>ul.sub {
+    width: 60%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; 
+}
+header .nav_list ul.gnb>li>ul.sub>li {
+    width: 50%;
+}
+header .nav_list ul.gnb>li>ul>li>a {
+    display: block; padding: 10px;
+    margin: 10px 0;   opacity: 0.7;
+} 
+header .nav_list ul.gnb>li>ul>li:hover>a {
+    opacity: 1;
+    text-decoration: underline;
+} 
+header .nav_list ul.gnb>li:nth-child(2)>ul.sub {
+    width: 80%;
+    padding-top: 50px;
+    margin: 0 auto; 
+    display: flex;
+}
+header .nav_list ul.gnb>li>ul.sub_room {
+    display: flex; width: 100%;
+    flex-direction: column;
+    padding-top: 50px; position: relative;
+    
+    padding-left: 30px; 
+}
+header .nav_list ul.gnb>li>ul.sub_room>li {
+    width: 50%;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li>a {
+    display: block; padding: 10px;
+    margin: 40px 0; 
+}
+header .nav_list ul.gnb>li>ul.sub_room>li:first-child>a {
+    margin-top: 10px;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li:nth-child(1)>ul.sub_sub {
+    position: absolute; left: 100px; top: 66px;
+    width: 120px; display: flex; flex-wrap: wrap;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li:nth-child(1)>ul.sub_sub li {
+    width: 50%;
+    padding: 4px 0;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li:nth-child(2)>ul.sub_sub {
+    position: absolute; left: 100px; top: 132px;
+    margin-top: 50px;  width: 120px; display: flex; flex-wrap: wrap;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li:nth-child(2)>ul.sub_sub li {
+    width: 50%;
+    padding: 4px 0;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li:nth-child(3)>ul.sub_sub {
+    position: absolute; left: 100px; top: 248px;
+    margin-top: 50px;  width: 120px; display: flex; flex-wrap: wrap;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li:nth-child(3)>ul.sub_sub li {
+    width: 50%;
+    padding: 4px 0;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li:nth-child(4)>ul.sub_sub {
+    position: absolute; left: 100px; top: 368px;
+    margin-top: 50px;  width: 120px; display: flex; flex-wrap: wrap;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li:nth-child(4)>ul.sub_sub li {
+    width: 50%;
+    padding: 4px 0;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li>ul.sub_sub li a {
+    opacity: 0.5;
+}
+header .nav_list ul.gnb>li>ul.sub_room>li>ul.sub_sub li:hover a {
+    color: yellow; opacity: 0.9;
+}
